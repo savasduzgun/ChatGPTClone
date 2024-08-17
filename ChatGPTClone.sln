@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34928.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatGPTClone.WebApi", "ChatGPTClone.WebApi\ChatGPTClone.WebApi.csproj", "{3604D856-0594-434F-AAE9-6513BC2ACAAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatGPTClone.WasmClient", "ChatGPTClone.WasmClient\ChatGPTClone.WasmClient.csproj", "{1E89C07E-CEEB-4591-8428-2E453CB9866A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3604D856-0594-434F-AAE9-6513BC2ACAAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3604D856-0594-434F-AAE9-6513BC2ACAAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3604D856-0594-434F-AAE9-6513BC2ACAAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3604D856-0594-434F-AAE9-6513BC2ACAAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E89C07E-CEEB-4591-8428-2E453CB9866A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E89C07E-CEEB-4591-8428-2E453CB9866A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E89C07E-CEEB-4591-8428-2E453CB9866A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E89C07E-CEEB-4591-8428-2E453CB9866A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FB6B85E1-DD1D-4BF5-9DAB-0AD77368C590}
+	EndGlobalSection
+EndGlobal
