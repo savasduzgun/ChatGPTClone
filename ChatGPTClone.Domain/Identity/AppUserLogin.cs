@@ -2,7 +2,7 @@
 
 namespace ChatGPTClone.Domain.Identity
 {
-    public class Role : IdentityRole<Guid>
+    public class AppUserLogin : IdentityUserLogin<Guid>
     {
     }
 }
