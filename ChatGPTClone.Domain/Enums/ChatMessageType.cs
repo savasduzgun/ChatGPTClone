@@ -1,6 +1,6 @@
 ﻿namespace ChatGPTClone.Domain.Enums
 {
-    public enum GptMessageType
+    public enum ChatMessageType
     {
         // The prompt which is sent to the GPT model
         System = 1,
