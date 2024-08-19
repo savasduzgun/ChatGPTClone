@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ChatGPTClone.Domain.Identity
 {
-    public class AppUser:IdentityUser<Guid>
+    public class AppUser : IdentityUser<Guid>
     {
     }
 }
