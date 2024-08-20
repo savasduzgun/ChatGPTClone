@@ -11,4 +11,8 @@
     <Folder Include="Configurations\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ChatGPTClone.Domain\ChatGPTClone.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
