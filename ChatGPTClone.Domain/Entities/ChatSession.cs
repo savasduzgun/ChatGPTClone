@@ -8,7 +8,7 @@ namespace ChatGPTClone.Domain.Entities
     public sealed class ChatSession : EntityBase
     {
         public string Title { get; set; }
-        public GptModelType ModelType { get; set; }
+        public GptModelType Model { get; set; }
         public List<ChatThread> Threads { get; set; } = [];
         public Guid AppUserId { get; set; }
         public AppUser AppUser { get; set; }
