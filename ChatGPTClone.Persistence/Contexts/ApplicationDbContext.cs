@@ -1,6 +1,13 @@
-﻿namespace ChatGPTClone.Persistence.Contexts
+﻿using ChatGPTClone.Domain.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
+
+namespace ChatGPTClone.Persistence.Contexts
 {
-    public class ApplicationDbContext
+    public class ApplicationDbContext : IdentityDbContext<AppUser, Role, Guid, AppUserClaim, AppUserRole, AppUserLogin, RoleClaim, AppUserToken>
     {
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
+        {
+        }
     }
 }
