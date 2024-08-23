@@ -38,15 +38,15 @@ namespace ChatGPTClone.Persistence.Configurations
 
             // Configure value conversion and comparison for Threads
             builder.Property(p => p.Threads)
-                .HasConversion(
-                    v => JsonSerializer.Serialize(v, jsonOptions),
-                    v => JsonSerializer.Deserialize<List<ChatThread>>(v, jsonOptions) ?? new List<ChatThread>(),
-                    new ValueComparer<List<ChatThread>>(
-                        (c1, c2) => JsonSerializer.Serialize(c1, jsonOptions) == JsonSerializer.Serialize(c2, jsonOptions),
-                        c => c == null ? 0 : JsonSerializer.Serialize(c, jsonOptions).GetHashCode(),
-                        c => JsonSerializer.Deserialize<List<ChatThread>>(JsonSerializer.Serialize(c, jsonOptions), jsonOptions)
-                    )
-                );
+             .HasConversion(
+                 v => JsonSerializer.Serialize(v, jsonOptions),
+                 v => JsonSerializer.Deserialize<List<ChatThread>>(v, jsonOptions) ?? new List<ChatThread>(),
+                 new ValueComparer<List<ChatThread>>(
+                     (c1, c2) => JsonSerializer.Serialize(c1, jsonOptions) == JsonSerializer.Serialize(c2, jsonOptions),
+                     c => c == null ? 0 : JsonSerializer.Serialize(c, jsonOptions).GetHashCode(),
+                     c => JsonSerializer.Deserialize<List<ChatThread>>(JsonSerializer.Serialize(c, jsonOptions), jsonOptions)
+                 )
+             );
 
             // Index on JSONB column for better performance
             builder.HasIndex(p => p.Threads)
