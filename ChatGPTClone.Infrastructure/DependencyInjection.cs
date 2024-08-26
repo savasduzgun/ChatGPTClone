@@ -1,5 +1,6 @@
 ﻿using ChatGPTClone.Application.Common.Interfaces;
 using ChatGPTClone.Persistence.Contexts;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
