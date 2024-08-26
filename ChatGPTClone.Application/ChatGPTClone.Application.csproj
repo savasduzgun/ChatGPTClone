@@ -15,7 +15,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features\ChatSessions\Commands\" />
     <Folder Include="Features\ChatSessions\Queries\" />
   </ItemGroup>
 
