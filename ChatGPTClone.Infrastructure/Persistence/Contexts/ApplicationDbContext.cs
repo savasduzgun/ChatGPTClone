@@ -20,5 +20,15 @@ namespace ChatGPTClone.Persistence.Contexts
 
             builder.ApplyConfigurationsFromAssembly(typeof(ApplicationDbContext).Assembly);
         }
+
+        public Task<int> SaveChangeAsync(CancellationToken cancellationToken)
+        {
+            throw new NotImplementedException();
+        }
+
+        public int SaveChangesAsync()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
