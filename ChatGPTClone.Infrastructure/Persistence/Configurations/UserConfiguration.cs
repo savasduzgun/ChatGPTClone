@@ -52,7 +52,7 @@ namespace ChatGPTClone.Persistence.Configurations
             builder.HasMany<AppUserRole>().WithOne().HasForeignKey(ur => ur.UserId).IsRequired();
 
             // Each User can have many ChatSessions
-            builder.HasMany<ChatSession>(x => x.ChatSessions)
+            builder.HasMany<ChatSession>()
                 .WithOne()
                 .HasForeignKey(x => x.AppUserId);
 
