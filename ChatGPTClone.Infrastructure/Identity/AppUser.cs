@@ -12,6 +12,5 @@ namespace ChatGPTClone.Infrastructure.Identity
         public string CreatedByUserId { get; set; }
         public DateTimeOffset? ModifiedOn { get; set; }
         public string? ModifiedByUserId { get; set; }
-        public ICollection<ChatSession> ChatSessions { get; set; }
     }
 }
